@@ -1,0 +1,142 @@
+/* Importanto fonte do google */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* zerando todos espaçamentos padrões */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+}
+
+body{
+    background-color: rgb(22, 22, 22);
+}
+
+.conteudo{
+    width: 100%;
+    /* A main deve ocupar toda a largura disponível */
+    max-width: 1700px;
+    /* Limita a largura máxima para evitar que o conteúdo fique muito amplo em telas grandes */
+    margin: 0 auto;
+    /* Centraliza a main horizontalmente */
+    padding: 20px;
+    /* Adiciona um espaçamento interno para afastar o conteúdo das bordas */
+    box-sizing: border-box;
+    /* Garante que o padding não aumente a largura da main */
+    height: auto;
+}
+
+.section-1{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.section-1 h1{
+    font-size: 60px;
+    padding: 20px 0px;
+    color: #ff5e00c7;
+}
+
+.card-poster {
+    width: 100%;
+    margin-bottom: 50px;
+    cursor: pointer;
+    height: 500px;
+  }
+
+.poster h1{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    filter: brightness(60%);
+    transition: 0.3s all;
+}
+
+div img:hover {
+    filter: brightness(100%);
+}
+
+
+@media screen and (max-width: 1046px) {
+    .card-poster {
+        height: 450px;
+      }
+}
+
+@media screen and (max-width: 1046px) {
+    .card-poster {
+        height: 400px;
+      }
+}
+
+@media screen and (max-width: 824px) {
+    .card-poster {
+        height: 370px;
+      }
+}
+
+
+@media screen and (max-width: 768px) {
+    .card-poster {
+        height: 350px;
+      }
+}
+
+@media screen and (max-width: 506px) {
+    .section-1 h1{
+        font-size: 48px;
+    }
+
+    .poster h1{
+        font-size: 1.7rem;
+    }
+
+    .card-poster {
+        height: 225px;
+        margin-bottom: 33px;
+      }
+}
+
+@media screen and (max-width: 425px) {
+    .section-1 h1{
+        font-size: 40px;
+    }
+
+    .poster h1{
+        font-size: 1.5rem;
+    }
+
+    .card-poster {
+        height: 173px;
+      }
+}
+
+@media screen and (max-width: 375px) {
+    .card-poster {
+        height: 150px;
+      }
+}
+
+@media screen and (max-width: 320px) {
+    .section-1 h1{
+        font-size: 30px;
+    }
+
+    .poster h1{
+        font-size: 1.2rem;
+    }
+
+    .card-poster {
+        height: 125px;
+        margin-bottom: 15px;
+      }
+}

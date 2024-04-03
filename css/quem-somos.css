@@ -1,0 +1,590 @@
+/* Importanto fonte do google */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* zerando todos espaçamentos padrões */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    position: fixed;
+}
+
+body {
+    background-color: rgb(22, 22, 22);
+}
+
+.titulo-1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+.titulo-2 {
+    color: #FFF;
+    font-size: 1.7rem;
+    padding: 50px 0px;
+}
+
+.titulo-3 {
+    font-size: 0.5rem;
+    color: #FFF;
+    font-weight: 800;
+}
+
+.titulo-section {
+    padding: 30px 0px;
+
+}
+
+.subtitulo {
+    font-size: 15px;
+    font-weight: 400;
+
+}
+
+.top-cine {
+    color: #ff5e00c7;
+}
+
+/* ------------------------------------------------------------ */
+
+.conteudo {
+    width: 100%;
+    /* A main deve ocupar toda a largura disponível */
+    max-width: 1700px;
+    /* Limita a largura máxima para evitar que o conteúdo fique muito amplo em telas grandes */
+    margin: 0 auto;
+    /* Centraliza a main horizontalmente */
+    padding: 20px;
+    /* Adiciona um espaçamento interno para afastar o conteúdo das bordas */
+    box-sizing: border-box;
+    /* Garante que o padding não aumente a largura da main */
+
+    height: auto;
+}
+
+/* Container quem somos */
+
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    margin-top: 100px;
+}
+
+.container-quem-somos {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    gap: 100px;
+}
+
+.container-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    height: auto;
+    width: 70%;
+    text-align: justify;
+    padding: 30px;
+
+}
+
+.container-texto p {
+    color: #FFF;
+    font-size: 2.2rem;
+    font-weight: 300;
+}
+
+.container-img {
+    display: flex;
+    height: 700px;
+    width: 40%;
+}
+
+.container-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.container-vantagens {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+.card-vantagem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 400px;
+    width: 400px;
+}
+
+.img-card img {
+    height: 100px;
+    border-radius: 10px;
+}
+
+.card-texto {
+    width: 100%;
+    height: 50%;
+    
+    font-size: 20px;
+    text-align: center;
+    color: #FFF;
+}
+
+.card-texto h2 {
+    font-size: 1.4rem;
+    width: 100%;
+    font-weight: 200;
+    text-align: center;
+}
+
+/* Section 2 */
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #ff5e00c7;
+}
+
+.container-participantes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 80%;
+    height: auto;
+    margin: auto;
+    gap: 30px;
+}
+
+.card-participante {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 260px;
+    background-color: #34343413;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 0.5px solid #ff5e001a;
+}
+
+.card-participante a {
+    transition: 0.2s all;
+}
+
+.card-participante a:hover {
+    color: rgba(255, 94, 0, 0.93);
+}
+
+.info-participante {
+    display: flex;
+    flex-direction: column;
+}
+
+.nome-participante {
+    color: #FFF;
+}
+
+.social-participante {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.img-participante {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.img-participante img {
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.participante-social {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.participante-social img {
+    height: 40px;
+}
+
+body, html, main {
+    width: 100%;
+    height: 100%;
+}
+
+
+@media only screen and (max-width:1452px) {
+    .card-participante {
+        width: 210px;
+        height: 350px;
+    }
+    
+    .img-participante {
+        width: 80%;
+        height: 50%;
+        border-radius:100%;
+    }
+    
+    .img-participante img {
+        height: 100%;
+        width: 100%;
+        border-radius: 100%;
+        object-fit: cover;
+    }
+
+    .nome-participante {
+        font-size: 1.3rem;
+        color: #FFF;
+    }
+
+    .social-participante {
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+
+}
+
+@media only screen and (max-width:1280px) {
+    .container-quem-somos .titulo-1 {
+        font-size: 3rem;
+    }
+
+    .container-quem-somos p {
+        font-size: 1.7rem;
+    }
+}
+
+@media only screen and (max-width:1250px) {
+    .container-quem-somos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-texto {
+        padding: 0;
+    }
+
+    .container-img{
+        display: none;
+    }
+
+    .container-vantagens{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .card-vantagem{
+        height: 300px;
+        width: 300px;
+    }
+    
+}
+
+@media only screen and (max-width:1202px) {
+    
+    .card-participante{
+        width: 180px;
+        height: 320px;
+    }
+
+    .img-participante{
+        width: 80%;
+        height: 45%;
+        border-radius:100%;
+    }
+    
+    .nome-participante{
+        font-size: 1rem;
+        color: #FFF;
+    }
+
+    .social-participante{
+        font-size: 0.7rem;
+        font-weight: 300;
+    }
+}
+
+@media only screen and (max-width:1052px) {
+    
+    /* VANTAGENS CARD */
+    .container-vantagens{
+        gap: 25px;
+    }
+
+    .card-vantagem{
+        height: 280px;
+        width: 280px;
+    }
+
+    .img-card img{
+        height: 80px;
+    }
+
+    .card-texto h2{
+        font-size: 1.2rem;
+    }
+
+
+
+    /* PARTICIPANTES */
+    .container-participantes {
+        gap: 15px;
+    }
+
+    .card-participante{
+        width: 150px;
+        height: 290px;
+    }
+
+    .img-participante{
+        width: 80%;
+        height: 40%;
+        border-radius:100%;
+    }
+    
+    .nome-participante{
+        font-size: 1rem;
+        color: #FFF;
+    }
+
+    .social-participante{
+        font-size: 0.7rem;
+        font-weight: 300;
+    }
+}
+
+@media only screen and (max-width: 929px) {
+    
+    /* VANTAGENS CARD */
+
+    .card-vantagem{
+        height: 250px;
+        width: 250px;
+    }
+
+    .img-card img{
+        height: 80px;
+    }
+
+    .card-texto h2{
+        width: 100%;
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 839px) {
+    
+    /* VANTAGENS CARD */
+    .card-vantagem{
+        height: 250px;
+        width: 250px;
+    }
+
+    .img-card img{
+        height: 80px;
+    }
+
+    .card-texto h2{
+        width: 100%;
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 639px) {
+    
+    /* QUEM SOMOS */
+    .container-quem-somos .container-texto {
+        width: 90%;
+        gap: 20px;
+    }
+
+    .container-quem-somos .container-texto .titulo-1 {
+        font-size: 2.2rem;
+    }
+
+    .container-quem-somos p {
+        font-size: 1.2rem;
+    }
+
+    /* VANTAGENS CARD */
+    .card-vantagem{
+        width: 180px;
+        height: 210px;
+    }
+
+    .img-card img{
+        height: 60px;
+    }
+
+    .card-texto h2{
+        width: 100%;
+        font-size: 1rem;
+    }
+
+
+    /* CARD PERFIL*/
+    .container-participantes {
+        width: 95%;
+    }
+
+    .card-participante{
+        width: 150px;
+        height: 300px;
+    }
+
+    .img-participante{
+        width: 80%;
+        height: 45%;
+        border-radius:100%;
+    }
+    
+    .nome-participante{
+        font-size: 1rem;
+        color: #FFF;
+    }
+
+    .social-participante{
+        font-size: 0.7rem;
+        font-weight: 300;
+    }
+}
+
+@media only screen and (max-width: 424px) {
+
+    /* VANTAGENS CARD */
+    .card-vantagem{
+        width: 130px;
+        height: 200px;
+        gap: 20px;
+    }
+
+    .img-card img{
+        height: 50px;
+        border-radius: 5px;
+    }
+
+    .card-texto h2{
+        font-size: 0.85rem;
+    }
+
+
+    /* CARD PERFIL*/
+    .container-participantes {
+        width: 100%;
+    }
+
+    .card-participante{
+        width: 125px;
+        height: 300px;
+    }
+
+    .img-participante{
+        width: 80%;
+        height: 36%;
+        border-radius:100%;
+    }
+    
+    .nome-participante{
+        font-size: 0.82rem;
+        color: #FFF;
+    }
+
+    .social-participante{
+        font-size: 0.7rem;
+        font-weight: 300;
+    }
+}
+
+@media only screen and (max-width: 304px) {
+
+    /* QUEM SOMOS */
+    .container-quem-somos .container-texto {
+        width: 90%;
+        gap: 20px;
+    }
+
+    .container-quem-somos .container-texto .titulo-1 {
+        font-size: 1.5rem;
+    }
+
+    .container-quem-somos p {
+        font-size: 0.85rem;
+    }
+
+    /* VANTAGENS CARD */
+    .container-vantagens {
+        gap: 10px;
+    }
+
+    .card-vantagem {
+        width: 100px;
+        height: 200px;
+        gap: 10px;
+    }
+
+    .img-card img {
+        height: 40px;
+        border-radius: 5px;
+    }
+
+    .card-texto h2{
+        font-size: 0.8rem;
+    }
+
+    /* CARD PERFIL*/
+    .container-participantes {
+        width: 100%;
+    }
+
+    .card-participante{
+        width: 125px;
+        height: 220px;
+    }
+
+    .img-participante{
+        width: 80%;
+        height: 40%;
+        border-radius:100%;
+    }
+    
+    .nome-participante{
+        font-size: 0.82rem;
+        color: #FFF;
+    }
+
+    .social-participante{
+        font-size: 0.7rem;
+        font-weight: 300;
+    }
+}
+
