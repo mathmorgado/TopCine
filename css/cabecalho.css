@@ -42,7 +42,6 @@ a{
 }
 
 /* navegação*/
-
 .nav-link{
     width: 450px;
     margin-right: 20px;
@@ -60,6 +59,7 @@ a{
     font-weight: 500;
     padding: 10px;
     color: #FFF;
+    transition: all 0.2s;
 }
 
 .nav-link li{
